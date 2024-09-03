@@ -11,6 +11,7 @@
 	<groupId>com.org.java</groupId>
 	<artifactId>SpringbootProjectApplicationDevelopment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>SpringbootProjectApplicationDevelopment</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -57,6 +58,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>spring-app-development</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

@@ -10,7 +10,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build -t srinuk9676/springboot-endtoend-applicationlatest .'
+                    bat 'docker build -t srinuk9676/spring-app-development .'
                 }
             }
         
@@ -22,7 +22,7 @@ pipeline {
                   bat "docker login -u ${env.srinuk9676} -p ${env.srinudockerhub}"
 
 }
-                  bat 'docker push srinuk9676/springboot-endtoend-applicationlatest'
+                  bat 'docker push srinuk9676/spring-app-development'
                 }
             }
         }  
